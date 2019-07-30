@@ -1,0 +1,11 @@
+# About IntelliJ
+*.iml
+/.idea/
+*/.idea/
+/out/
+
+# build application files
+/target/
+
+# compiled class files
+*.class
