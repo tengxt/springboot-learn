@@ -3,9 +3,15 @@
 /.idea/
 */.idea/
 /out/
+*/.mvn/
+*/mvnw
+*/mvnw.cmd
+*/HELP.md
 
 # build application files
 /target/
+
+
 
 # compiled class files
 *.class
