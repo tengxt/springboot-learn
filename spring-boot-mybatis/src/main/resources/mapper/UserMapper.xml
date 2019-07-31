@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 封装返回结果 -->
+<mapper namespace="com.tengxt.springbootmybatis.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.tengxt.springbootmybatis.entity.User">
+        <id column="id" property="id" jdbcType="INTEGER"></id>
+        <result column="name" property="name" jdbcType="VARCHAR"></result>
+        <result column="sex" property="sex" jdbcType="BIT"></result>
+    </resultMap>
+
+    <!--useGeneratedKeys="true" keyProperty="id" 插入数据返回主键值-->
+    <insert id="save" useGeneratedKeys="true" keyProperty="id" parameterType="com.tengxt.springbootmybatis.entity.User">
+        INSERT INTO user(name,sex) VALUES (#{name}, #{sex})
+    </insert>
+
+    <update id="update" useGeneratedKeys="true" keyProperty="id" parameterType="com.tengxt.springbootmybatis.entity.User">
+        UPDATE user SET name=#{name},sex=#{sex} WHERE id=#{id}
+    </update>
+
+    <delete id="deleteById" parameterType="java.lang.Integer">
+        DELETE FROM user WHERE id=#{id}
+    </delete>
+
+    <select id="queryById" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        SELECT id,name,sex FROM user WHERE id=#{id}
+    </select>
+
+</mapper>
