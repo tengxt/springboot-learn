@@ -20,4 +20,5 @@ public interface UserMapper {
     //        @Result(property = "sex", column = "sex", javaType = Byte.class)
     //})
     User queryById(Integer id);
+
 }
