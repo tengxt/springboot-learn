@@ -6,3 +6,4 @@
 [02.Spring-Boot的配置文件](https://tengxt.github.io/2019/07/30/Spring-Boot%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/ "Spring-Boot的配置文件")<br/>
 [03.Spring-Boot中使用-MyBatis](https://tengxt.github.io/2019/08/01/Spring-Boot%E4%B8%AD%E4%BD%BF%E7%94%A8-MyBatis/ "Spring Boot中使用 MyBatis")<br/>
 [04.Spring-Boot中使用-JdbcTemplate](https://tengxt.github.io/2019/08/01/Spring-Boot%E4%B8%AD%E4%BD%BF%E7%94%A8-JdbcTemplate/ "Spring Boot中使用 JdbcTemplate")<br/>
+[05.Spring-Boot-多数据源配置之JdbcTemplate](https://tengxt.github.io/2019/08/01/Spring-Boot-%E5%A4%9A%E6%95%B0%E6%8D%AE%E6%BA%90%E9%85%8D%E7%BD%AE%E4%B9%8BJdbcTemplate/ "Spring-Boot-多数据源配置之JdbcTemplate")<br/>
