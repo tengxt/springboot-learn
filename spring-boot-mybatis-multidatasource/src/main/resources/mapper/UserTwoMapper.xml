@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tengxt.springbootmybatismultidatasource.mapper.UserTwoMapper">
+    <resultMap id="BaseResultMap" type="com.tengxt.springbootmybatismultidatasource.entity.User">
+        <id column="id" property="id" jdbcType="INTEGER"></id>
+        <result column="name" property="name" jdbcType="VARCHAR"></result>
+        <result column="sex" property="sex" jdbcType="BIT"></result>
+    </resultMap>
+
+    <select id="queryUserTwoAll" resultMap="BaseResultMap">
+        SELECT * FROM user
+    </select>
+
+
+</mapper>
