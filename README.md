@@ -10,3 +10,4 @@
 [06.Spring-Boot-多数据源配置之MyBatis](https://tengxt.github.io/2019/08/07/Spring-Boot-%E5%A4%9A%E6%95%B0%E6%8D%AE%E6%BA%90%E9%85%8D%E7%BD%AE%E4%B9%8BMyBatis/ "Spring-Boot-多数据源配置之MyBatis")<br/>
 [07.Spring-Boot-AOP记录用户操作日志](https://tengxt.github.io/2019/08/07/Spring-Boot-AOP%E8%AE%B0%E5%BD%95%E7%94%A8%E6%88%B7%E6%93%8D%E4%BD%9C%E6%97%A5%E5%BF%97/ "Spring-Boot-AOP记录用户操作日志")<br/>
 [08.Spring-Boot-中使用-Thymeleaf](https://tengxt.github.io/2019/08/08/Spring-Boot-%E4%B8%AD%E4%BD%BF%E7%94%A8-Thymeleaf/ "Spring-Boot-中使用-Thymeleaf")<br/>
+[09.Spring-Boot-中使用Redis缓存数据](https://tengxt.github.io/2019/08/14/Spring-Boot-%E4%B8%AD%E4%BD%BF%E7%94%A8Redis%E7%BC%93%E5%AD%98%E6%95%B0%E6%8D%AE/ "Spring-Boot-中使用Redis缓存数据")<br/>
