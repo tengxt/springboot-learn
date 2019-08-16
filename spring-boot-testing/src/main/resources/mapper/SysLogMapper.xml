@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tengxt.springboottesting.mapper.SysLogMapper">
+    <resultMap id="BaseResultMap" type="com.tengxt.springboottesting.entity.SysLog">
+        <id column="id" property="id" jdbcType="INTEGER"></id>
+        <result column="username" property="username" jdbcType="VARCHAR"></result>
+        <result column="operation" property="operation" jdbcType="VARCHAR"></result>
+        <result column="time" property="time" jdbcType="VARCHAR"></result>
+        <result column="method" property="method" jdbcType="VARCHAR"></result>
+        <result column="ip" property="ip" jdbcType="VARCHAR"></result>
+        <result column="createTime" property="createTime" jdbcType="DATE"></result>
+        <result column="params" property="params" jdbcType="VARCHAR"></result>
+    </resultMap>
+
+    <select id="findByName" parameterType="java.lang.String" resultMap="BaseResultMap">
+        SELECT * FROM sys_log WHERE username = #{username}
+    </select>
+
+    <insert id="save" parameterType="com.tengxt.springboottesting.entity.SysLog" useGeneratedKeys="true" keyColumn="id">
+        INSERT INTO sys_log(username,operation,time,method,ip,createTime,params)
+        VALUES (#{username},#{operation},#{time},#{method},#{ip},#{createTime},#{params})
+    </insert>
+
+
+</mapper>
