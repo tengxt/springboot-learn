@@ -35,7 +35,7 @@ public class TempEmailController {
             MimeMessageHelper helper = new MimeMessageHelper(message, true);
             helper.setFrom(from);
             // 接收地址
-            helper.setTo("1300230407@qq.com");
+            helper.setTo("xxxx@qq.com");
             // 标题
             helper.setSubject("一封带有静态资源的邮件");
             // 出来邮件模板

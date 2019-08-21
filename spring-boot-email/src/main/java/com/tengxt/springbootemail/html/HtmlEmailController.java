@@ -30,7 +30,7 @@ public class HtmlEmailController {
             MimeMessageHelper helper = new MimeMessageHelper(message, true);
             helper.setFrom(from);
             // 接收地址
-            helper.setTo("1300230407@qq.com");
+            helper.setTo("xxxx@qq.com");
             // 标题
             helper.setSubject("一封带有<b>HTML</b>格式的邮件");
             // 带有HTML格式的内容

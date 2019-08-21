@@ -32,7 +32,7 @@ public class AttachEmailController {
             MimeMessageHelper helper = new MimeMessageHelper(message, true);
             helper.setFrom(from);
             // 接收地址
-            helper.setTo("1300230407@qq.com");
+            helper.setTo("xxxx@qq.com");
             // 标题
             helper.setSubject("一封带附件的邮件");
             // 内容

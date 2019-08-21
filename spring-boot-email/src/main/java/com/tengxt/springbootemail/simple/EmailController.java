@@ -26,7 +26,7 @@ public class EmailController {
             SimpleMailMessage mailMessage = new SimpleMailMessage();
             mailMessage.setFrom(from);
             // 接收地址
-            mailMessage.setTo("1300230407@qq.com");
+            mailMessage.setTo("xxxx@qq.com");
             // 标题
             mailMessage.setSubject("一封简单的邮件");
             // 内容
