@@ -15,3 +15,5 @@
 [11.Spring-Boot中编写单元测试](https://tengxt.github.io/2019/08/16/Spring-Boot%E4%B8%AD%E7%BC%96%E5%86%99%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/)<br/>
 [12.Spring Boot整合Swagger2构建RESTful API](https://tengxt.github.io/2019/08/18/Spring-Boot%E6%95%B4%E5%90%88Swagger2/)<br/>
 [13.使用Actuator监控Spring-Boot应用](https://tengxt.github.io/2019/08/20/%E4%BD%BF%E7%94%A8Actuator%E7%9B%91%E6%8E%A7Spring-Boot%E5%BA%94%E7%94%A8/)<br/>
+[14.使用Spring-Boot发送邮件](https://tengxt.github.io/2019/08/21/%E4%BD%BF%E7%94%A8Spring-Boot%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/)<br/>
+[15.Spring-Boot-Devtools热部署](https://tengxt.github.io/2019/08/22/Spring-Boot-Devtools%E7%83%AD%E9%83%A8%E7%BD%B2/)<br/>
