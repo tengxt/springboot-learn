@@ -8,6 +8,11 @@ import org.jsoup.safety.Whitelist;
  * xss 过滤工具
  */
 public class JsoupUtil {
+    /**
+     * 使用自带的 basicWithImages 白名单
+     * 允许的便签有 a,b,blockquote,br,cite,code,dd,dl,dt,em,i,li,ol,p,pre,q,small,span,strike,strong,sub,sup,u,ul,img
+     * 以及 a 标签的 href,img 标签的 src,align,alt,height,width,title 属性
+     */
     private static final Whitelist whitelist = Whitelist.basicWithImages();
 
     /**
@@ -24,5 +29,11 @@ public class JsoupUtil {
 
     public static String clean(String content){
         return Jsoup.clean(content, "", whitelist, outputSettings);
+    }
+
+    public static void main(String[] args){
+        String testHtml = "<div class='div' style='height: 100px;'>div 标签的内容 </div><p class='div' style='width: 50px;'>p 标签的内容 </p>";
+        String resContent = clean(testHtml);
+        System.out.println(resContent);//div 标签的内容 <p style="width: 50px;">p 标签的内容 </p>
     }
 }
