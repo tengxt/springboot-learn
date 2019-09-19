@@ -1,0 +1,77 @@
+22:17:29.622 logback [main] INFO  c.t.s.SpringBootLogbackApplication - Starting SpringBootLogbackApplication on DESKTOP-OSOL5CP with PID 5140 (D:\IDEA_WorkSpace\springboot-learn\spring-boot-logback\target\classes started by adminxt in D:\IDEA_WorkSpace\springboot-learn\spring-boot-logback)
+22:17:29.653 logback [main] INFO  c.t.s.SpringBootLogbackApplication - No active profile set, falling back to default profiles: default
+22:17:33.792 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22:17:33.841 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:17:33.877 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:17:33.880 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+22:17:34.355 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:17:34.356 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4544 ms
+22:17:35.200 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+22:17:35.587 logback [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+22:17:36.031 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:17:36.112 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22:17:36.125 logback [main] INFO  c.t.s.SpringBootLogbackApplication - Started SpringBootLogbackApplication in 8.568 seconds (JVM running for 11.145)
+22:18:21.489 logback [main] INFO  c.t.s.SpringBootLogbackApplication - Starting SpringBootLogbackApplication on DESKTOP-OSOL5CP with PID 9792 (D:\IDEA_WorkSpace\springboot-learn\spring-boot-logback\target\classes started by adminxt in D:\IDEA_WorkSpace\springboot-learn\spring-boot-logback)
+22:18:21.505 logback [main] INFO  c.t.s.SpringBootLogbackApplication - No active profile set, falling back to default profiles: default
+22:18:25.412 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22:18:25.459 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:18:25.493 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:18:25.494 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+22:18:25.976 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:18:25.976 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4299 ms
+22:18:26.720 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+22:18:27.032 logback [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+22:18:27.321 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:18:27.399 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22:18:27.415 logback [main] INFO  c.t.s.SpringBootLogbackApplication - Started SpringBootLogbackApplication in 7.831 seconds (JVM running for 11.086)
+22:40:39.141 logback [main] INFO  c.t.s.SpringBootLogbackApplication - Starting SpringBootLogbackApplication on DESKTOP-OSOL5CP with PID 6772 (D:\IDEA_WorkSpace\springboot-learn\spring-boot-logback\target\classes started by adminxt in D:\IDEA_WorkSpace\springboot-learn\spring-boot-logback)
+22:40:39.151 logback [main] INFO  c.t.s.SpringBootLogbackApplication - No active profile set, falling back to default profiles: default
+22:40:43.049 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22:40:43.097 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:40:43.164 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:40:43.165 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+22:40:43.692 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:40:43.692 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4333 ms
+22:40:44.574 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+22:40:45.067 logback [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+22:40:45.428 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:40:45.521 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22:40:45.531 logback [main] INFO  c.t.s.SpringBootLogbackApplication - Started SpringBootLogbackApplication in 8.587 seconds (JVM running for 11.407)
+22:44:25.013 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:44:25.013 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:44:25.034 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 21 ms
+22:46:26.390 logback [main] INFO  c.t.s.SpringBootLogbackApplication - Starting SpringBootLogbackApplication on DESKTOP-OSOL5CP with PID 7616 (D:\IDEA_WorkSpace\springboot-learn\spring-boot-logback\target\classes started by adminxt in D:\IDEA_WorkSpace\springboot-learn\spring-boot-logback)
+22:46:26.408 logback [main] INFO  c.t.s.SpringBootLogbackApplication - No active profile set, falling back to default profiles: default
+22:46:30.898 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22:46:30.951 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:46:30.986 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:46:30.987 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+22:46:31.495 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:46:31.496 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4559 ms
+22:46:32.201 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+22:46:32.520 logback [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+22:46:32.821 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:46:32.898 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22:46:32.909 logback [main] INFO  c.t.s.SpringBootLogbackApplication - Started SpringBootLogbackApplication in 8.206 seconds (JVM running for 10.664)
+22:46:44.351 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:46:44.352 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:46:44.371 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+22:46:44.555 logback [http-nio-8080-exec-1] INFO  c.t.s.controller.DemoController - 日志输出 info
+22:46:44.555 logback [http-nio-8080-exec-1] WARN  c.t.s.controller.DemoController - 日志输出 warn
+22:46:44.555 logback [http-nio-8080-exec-1] ERROR c.t.s.controller.DemoController - 日志输出 error
+22:47:21.049 logback [main] INFO  c.t.s.SpringBootLogbackApplication - Starting SpringBootLogbackApplication on DESKTOP-OSOL5CP with PID 3136 (D:\IDEA_WorkSpace\springboot-learn\spring-boot-logback\target\classes started by adminxt in D:\IDEA_WorkSpace\springboot-learn\spring-boot-logback)
+22:47:21.064 logback [main] INFO  c.t.s.SpringBootLogbackApplication - No active profile set, falling back to default profiles: default
+22:47:25.103 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22:47:25.160 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22:47:25.202 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:47:25.203 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+22:47:25.721 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:47:25.721 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4257 ms
+22:47:26.489 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+22:47:26.807 logback [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+22:47:27.108 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22:47:27.181 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22:47:27.192 logback [main] INFO  c.t.s.SpringBootLogbackApplication - Started SpringBootLogbackApplication in 7.827 seconds (JVM running for 10.607)
+22:48:00.768 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:48:00.769 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22:48:00.788 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 19 ms
