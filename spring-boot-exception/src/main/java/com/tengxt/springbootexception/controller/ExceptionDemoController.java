@@ -10,7 +10,7 @@ public class ExceptionDemoController {
 
     @RequestMapping("user/{id:\\d+}")
     public void get(@PathVariable String id){
-        throw new RuntimeException("该用户不存在！");
+        throw new RuntimeException("user is not exists");
     }
 
     /**
