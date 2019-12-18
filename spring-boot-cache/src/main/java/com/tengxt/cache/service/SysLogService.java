@@ -34,7 +34,7 @@ public class SysLogService {
      *  3. 哪个配置类默认生效:SimpleCacheConfiguration
      *
      *  4. 给容器中注册了一个CacheManager：ConcurrentMapCacheManager
-     *  5. 可以获取和创建ConcurrentMapCache类型的缓存组件；他的作用将数据保存在ConcurrentMap中
+     *  5. 可以获取和创建 ConcurrentMapCache 类型的缓存组件；他的作用将数据保存在ConcurrentMap中
      *
      *  运行流程：
      *  @Cacheable：
