@@ -44,7 +44,9 @@ public class AuthorizeController {
         accessTokenDTO.setCode(code);
         accessTokenDTO.setRedirect_uri(redirectUri);
         accessTokenDTO.setState(state);
+        // 获取accessToken
         String accessToken = githubProvider.getAccessToken(accessTokenDTO);
+        // 获取用户信息
         GithubUserDTO userDTO = githubProvider.getUser(accessToken);
         if(null != userDTO){
             User user = new User();
@@ -54,7 +56,7 @@ public class AuthorizeController {
             user.setToken(token);
             int res = userService.insertUser(user);
             if(res > 0){
-                System.out.println("插入成功.");
+                //System.out.println("插入成功.");
                 // 登录成功，把用户信息记录到 cookie 中
                 response.addCookie(new Cookie("token", token));
             }
