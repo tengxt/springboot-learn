@@ -53,14 +53,16 @@ public class PublishController {
         }
         User user = null;
         Cookie[] cookies = request.getCookies();
-        for (Cookie cookie: cookies) {
-            if("token".equals(cookie.getName())){
-                String token = cookie.getValue();
-                user = userService.fingByToken(token);
-                if(null != user){
-                    request.getSession().setAttribute("user", user);
+        if(null != cookies && cookies.length != 0) {
+            for (Cookie cookie : cookies) {
+                if ("token".equals(cookie.getName())) {
+                    String token = cookie.getValue();
+                    user = userService.fingByToken(token);
+                    if (null != user) {
+                        request.getSession().setAttribute("user", user);
+                    }
+                    break;
                 }
-                break;
             }
         }
         if(null == user){

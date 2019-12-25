@@ -18,14 +18,16 @@ public class IndexController {
     @GetMapping("/")
     public String showPages(HttpServletRequest request){
         Cookie[] cookies = request.getCookies();
-        for (Cookie cookie: cookies) {
-            if("token".equals(cookie.getName())){
-                String token = cookie.getValue();
-                User user = userService.fingByToken(token);
-                if(null != user){
-                    request.getSession().setAttribute("user", user);
+        if(null != cookies && cookies.length != 0){
+            for (Cookie cookie: cookies) {
+                if("token".equals(cookie.getName())){
+                    String token = cookie.getValue();
+                    User user = userService.fingByToken(token);
+                    if(null != user){
+                        request.getSession().setAttribute("user", user);
+                    }
+                    break;
                 }
-                break;
             }
         }
         return "index";
