@@ -52,7 +52,7 @@ public class AuthorizeController {
             User user = new User();
             user.setName(userDTO.getName());
             user.setAccountId(String.valueOf(userDTO.getId()));
-            user.setAvatarUrl(userDTO.getAvatar_url());
+            user.setAvatarUrl(userDTO.getAvatarUrl());
             String token = UUID.randomUUID().toString();
             user.setToken(token);
             int res = userService.insertUser(user);

@@ -11,5 +11,5 @@ public class GithubUserDTO {
     private String location;
     private String email;
     private String bio;
-    private String avatar_url;
+    private String avatarUrl;
 }
