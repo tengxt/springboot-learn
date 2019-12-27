@@ -10,8 +10,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
@@ -51,20 +49,7 @@ public class PublishController {
             model.addAttribute("error", "标签不能为空");
             return "publish";
         }
-        User user = null;
-        Cookie[] cookies = request.getCookies();
-        if(null != cookies && cookies.length != 0) {
-            for (Cookie cookie : cookies) {
-                if ("token".equals(cookie.getName())) {
-                    String token = cookie.getValue();
-                    user = userService.fingByToken(token);
-                    if (null != user) {
-                        request.getSession().setAttribute("user", user);
-                    }
-                    break;
-                }
-            }
-        }
+        User user = (User) request.getSession().getAttribute("user");
         if(null == user){
             model.addAttribute("error", "用户未登录");
             return "publish";

@@ -122,4 +122,15 @@ public class QuestionService {
         paginationDTO.setData(dtoList);
         return paginationDTO;
     }
+
+    public QuestionDTO getById(Integer id) {
+        QuestionDTO questionDTO = new QuestionDTO();
+        Question question = questionMapper.findById(id);
+        //  把question类中的属性映射到QuestionDTO中 (反射)
+        BeanUtils.copyProperties(question, questionDTO);
+        // 获取用户信息
+        User user = userMapper.findById(question.getCreator());
+        questionDTO.setUser(user);
+        return questionDTO;
+    }
 }

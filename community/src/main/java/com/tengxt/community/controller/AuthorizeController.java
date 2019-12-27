@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.UUID;
 
@@ -48,23 +49,32 @@ public class AuthorizeController {
         String accessToken = githubProvider.getAccessToken(accessTokenDTO);
         // 获取用户信息
         GithubUserDTO userDTO = githubProvider.getUser(accessToken);
-        if(null != userDTO){
+        if(null != userDTO && null != userDTO.getId()){
             User user = new User();
+            String token = UUID.randomUUID().toString();
+            user.setToken(token);
             user.setName(userDTO.getName());
             user.setAccountId(String.valueOf(userDTO.getId()));
             user.setAvatarUrl(userDTO.getAvatarUrl());
-            String token = UUID.randomUUID().toString();
-            user.setToken(token);
-            int res = userService.insertUser(user);
-            if(res > 0){
-                //System.out.println("插入成功.");
-                // 登录成功，把用户信息记录到 cookie 中
-                response.addCookie(new Cookie("token", token));
-            }
+            boolean orUpdate = userService.createOrUpdate(user);
+            Cookie cookie = new Cookie("token", token);
+            cookie.setMaxAge(60 * 60 * 24 * 30 * 6);
+            response.addCookie(cookie);
             return "redirect:/";
         }else{
             // 登录失败，返回主页
             return "redirect:/";
         }
+    }
+
+    @GetMapping("/logout")
+    public String logout(HttpServletRequest request,HttpServletResponse response){
+        // 清空session
+        request.getSession().removeAttribute("user");
+        // 清空cookie
+        Cookie cookie = new Cookie("token", null);
+        cookie.setMaxAge(0);
+        response.addCookie(cookie);
+        return "redirect:/";
     }
 }

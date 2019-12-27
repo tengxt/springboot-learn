@@ -3,6 +3,7 @@ package com.tengxt.community.mapper;
 import com.tengxt.community.bean.Question;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -25,4 +26,7 @@ public interface QuestionMapper {
 
     @Select("SELECT * FROM question WHERE creator = #{userId} LIMIT #{offset},#{size}")
     List<Question> listByUserId(@RequestParam("userId") Integer userId,@RequestParam("offset") Integer offset, @RequestParam("size") Integer size);
+
+    @Select("SELECT * FROM question WHERE id = #{id}")
+    Question findById(@Param("id") Integer id);
 }
