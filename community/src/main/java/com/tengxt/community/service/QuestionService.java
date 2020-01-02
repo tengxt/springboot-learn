@@ -22,13 +22,6 @@ public class QuestionService {
     @Autowired
     private UserMapper userMapper;
 
-    public int saveQuestion(Question question){
-        question.setGmtCreate(System.currentTimeMillis());
-        // 获取创建时间
-        question.setGmtModified(question.getGmtCreate());
-        return questionMapper.save(question);
-    }
-
     public PaginationDTO questionDTOList(Integer page, Integer size){
         PaginationDTO paginationDTO = new PaginationDTO();
 
@@ -132,5 +125,20 @@ public class QuestionService {
         User user = userMapper.findById(question.getCreator());
         questionDTO.setUser(user);
         return questionDTO;
+    }
+
+    public int createOrUpdate(Question question) {
+        int flag = 0;
+        if(null == question.getId()){
+            // 新增
+            question.setGmtCreate(System.currentTimeMillis());
+            question.setGmtModified(question.getGmtCreate());
+            flag = questionMapper.save(question);
+        }else {
+            //修改
+            question.setGmtModified(System.currentTimeMillis());
+            flag = questionMapper.update(question);
+        }
+        return flag;
     }
 }

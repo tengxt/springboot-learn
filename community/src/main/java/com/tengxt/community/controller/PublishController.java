@@ -2,12 +2,14 @@ package com.tengxt.community.controller;
 
 import com.tengxt.community.bean.Question;
 import com.tengxt.community.bean.User;
+import com.tengxt.community.dto.QuestionDTO;
 import com.tengxt.community.service.QuestionService;
 import com.tengxt.community.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import javax.servlet.http.HttpServletRequest;
@@ -21,6 +23,19 @@ public class PublishController {
     @Autowired
     private UserService userService;
 
+    @GetMapping("/publish/{id}")
+    public String publish(@PathVariable("id") Integer id, Model model){
+        QuestionDTO question = questionService.getById(id);
+        if(null != question){
+            model.addAttribute("title", question.getTitle());
+            model.addAttribute("description", question.getDescription());
+            model.addAttribute("tag", question.getTag());
+            model.addAttribute("id", question.getId());
+        }
+
+        return "publish";
+    }
+
     @GetMapping("/publish")
     public String publish() {
         return "publish";
@@ -32,6 +47,7 @@ public class PublishController {
             @RequestParam(value = "title", required = false) String title,
             @RequestParam(value = "description", required = false) String description,
             @RequestParam(value = "tag", required = false) String tag,
+            @RequestParam(value = "id", required = false) Integer id,
             HttpServletRequest request,
             Model model){
         model.addAttribute("title", title);
@@ -59,10 +75,11 @@ public class PublishController {
         question.setDescription(description);
         question.setTag(tag);
         question.setCreator(user.getId());
-        int res = questionService.saveQuestion(question);
+        question.setId(id);
+        int res = questionService.createOrUpdate(question);
         if(res > 0){
             model.addAttribute("success", "发布成功.");
-            return "publish";
+            return "/";
         }
         return "publish";
     }
